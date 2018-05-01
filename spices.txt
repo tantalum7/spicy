@@ -19,10 +19,12 @@ Lemongrass
 Peppermint
 Savory
 Sorrel
+Curry Leaves, Dried While
 
 [spices]
 Chilli, Crushed Hot
 Chilli, Ground Hot
+Chipotle Chilli, Dried Whole
 Ginger, Ground
 Paprika, Mild
 Cinnamon, Sticks
@@ -48,8 +50,16 @@ Juniper Berries, Whole Dried
 Coriander Seed, Ground
 Coriander Seed, Whole
 Cardamon
-Sesame Seed
+Black Sesame Seed
+White Sesame Seed
 Szechuan Pepper
+Tomato, Dried Ground
+Tomato, Dried Chopped
+Onion Powder
+Allspice, Whole
+Lemon Peel, Dried Ground
+Orange Peel, Dried Ground
+
 
 [spice_mix]
 Garam Masala
@@ -67,6 +77,7 @@ Chinese Five Spice
 Pickle Masala
 Tandoori Masala
 Za'Atar
+Harissa
 
 [misc]
 Chilli Sea Salt, Coarse
