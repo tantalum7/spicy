@@ -3,13 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <style>
+        body
+        {
+            margin: 0px;
+            font-family: 'Ubuntu Mono';
+        }
+
+        .page
+        {
+            position: absolute;
+            width: 210mm;
+            background-color: grey;
+            border: none;
+            margin: 0mm;
+        }
+
+        /* First label of each row */
+        .page .label:nth-child(4n-3)
+        {
+            margin-left: 10.6mm;
+        }
+
+        /* Last label of each page */
+        .page .label:nth-child(40n)
+        {
+            margin-bottom: 21mm;
+        }
+
+        /* First label of each page */
+        .page .label:nth-child(40n-39)
+        {
+            margin-top: 21mm;
+        }
+
+        /* Entire first row of each page */
+        .page .label:nth-child(40n-39), .label:nth-child(40n-38), .label:nth-child(40n-37), .label:nth-child(40n-36)
+        {
+            margin-top: 21mm;
+        }
+
+        .label
+        {
+            float: left;
+            position: relative;
+            width: 45.7mm;
+            height: 25.5mm;
+            margin-right: 2mm;
+            background-color: white;
+            border-radius: 1.5mm;
+            border: none;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        .label .name
+        {
+            font-size: 11pt;
+            font-weight: bold;
+            margin-top: 7mm;
+            margin-left: 5mm;
+
+        }
+        .label .info
+        {
+            font-size: 11pt;
+            margin-top: 1mm;
+            margin-left: 5mm;
+        }
+        .label .pip
+        {
+            position: absolute;
+            right: 0mm;
+            top: 0mm;
+            width: 2mm;
+            height: 100%;
+        }
+        .herbs{ background-color: #84af5e; }
+        .spices{ background-color: #d66767; }
+        .spice_mix{ background-color: #efde4a; }
+        .misc{ background-color: #b3c4de; }
+    </style>
 </head>
 <body>
     <div class="page">
         {% for item in data_list %}
         <div class="label">
-          <div class="name">{{item.name}}</div>
-          <div class="info">{{item.info}}</div>
+            <div class="name">{{item.name}}</div>
+            <div class="info">{{item.info}}</div>
+            <div class="pip {{item.category}}"></div>
         </div>
         {% endfor %}
     </div>

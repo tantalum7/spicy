@@ -1,7 +1,7 @@
 # coding: utf8
 import re
-from jinja2 import Environment, BaseLoader
-
+import jinja2
+import os
 
 class Spice(object):
     def __init__(self, name, info="", category=""):
@@ -41,19 +41,16 @@ def process_spices(file):
 
     return spice_list
 
-def render(data_list):
-    html = """
-    {% for item in data_list %}
-    <div class="label">
-      <div class="name">{{item.name}}</div>
-      <div class="info">{{item.info}}</div>
-    </div>
-    {% endfor %}
-    """
-    template = Environment(loader=BaseLoader()).from_string(html)
-    return template.render(data_list=data_list)
+
+def render(tpl_path, context):
+    path, filename = os.path.split(tpl_path)
+    return jinja2.Environment(loader=jinja2.FileSystemLoader(path or './')).get_template(filename).render(context)
+
+
 
 if __name__ == "__main__":
 
-    sl = process_spices("spices.txt")
-    print(render(sl))
+    with open("output.html", "w") as fp:
+        fp.write(render("spicy.html",{'data_list': process_spices("spices.txt")}))
+
+    print("done")

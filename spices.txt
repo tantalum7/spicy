@@ -1,9 +1,8 @@
-[Herbs]
+[herbs]
 Thyme
 Oregano
 Mint
 Rosemary
-Za'Atar
 Bay Leaf
 Mixed Herbs
 Sage
@@ -13,12 +12,17 @@ Blóðberg
 Villikrydd
 Tarragon
 Coriander Leaf, Ground
-Parsley Leaf, Dried
+Parsley, Dried
+Kaffir Lime
+Lavender
+Lemongrass
+Peppermint
+Savory
+Sorrel
 
-[Spices]
+[spices]
 Chilli, Crushed Hot
 Chilli, Ground Hot
-Crushed Chilli Flakes
 Ginger, Ground
 Paprika, Mild
 Cinnamon, Sticks
@@ -33,39 +37,44 @@ Saffron
 Cumin Seeds, Whole
 Cumin Seeds, Ground
 Nutmeg
-Mild Curry Powder
+Curry, Ground Mild
 Star Anise, Whole
 Ceylon Cinnamon
 Tumeric, Ground
 Cumin, Ground
+Yellow Mustard, Whole Seed
+Black Mustard, Whole Seed
+Juniper Berries, Whole Dried
+Coriander Seed, Ground
+Coriander Seed, Whole
+Cardamon
+Sesame Seed
+Szechuan Pepper
 
-[Spice Mixes]
+[spice_mix]
 Garam Masala
 Smoked Hickory
 Piri Piri
 Ras el Hanout
-Pitmaster BBQ Spice mix
+Pitmaster BBQ
 Salade de Fruits
 Guillade
 Jerk Mix
-Coriander Seed, Ground
-Coriander Seed, Whole
-Juniper Berries, Whole Dried
-Yellow Mustard Seed, Whole
 Riz
 Saté
 Trappeur
 Chinese Five Spice
 Pickle Masala
 Tandoori Masala
+Za'Atar
 
-[Misc]
+[misc]
 Chilli Sea Salt, Coarse
 Black Peppercorn, Whole
 Garlic, Dried Chopped
 Salt Flakes
 Fiery Sea Pepper
-Hawaain Black Salt
+Hawaiian Black Salt
 
 
 
